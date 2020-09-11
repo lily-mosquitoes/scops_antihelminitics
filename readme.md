@@ -8,8 +8,14 @@ This project is made utilizing the Django framework, as well as Bootstrap for CS
 
 ## Availability
 
-This web application is in development and not yet available as a live web site.
+This web application is currently deployed under heroku. You can access it via [scops-antihelmintics.herokuapp.com](https://scops-antihelmintics.herokuapp.com/)
 
 ## Acknowledgments
 
 This project is a successor of [Dr. Paul Airs](https://github.com/PaulAirs)' "[Know Your Anthelmintics](https://github.com/PaulAirs/SCOPS_Know_Your_Anthelmintics)" web app; and it is being developed in conjucntion with Dr. Paul Airs and Queen's University Belfast.
+
+## To do
+
+- Adjust HTML for mobile
+- Fix sticky headers for table
+- Add option to filter out products
