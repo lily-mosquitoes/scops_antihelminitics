@@ -12,4 +12,4 @@ This web application is in development and not yet available as a live web site.
 
 ## Acknowledgments
 
-This project is a successor of Dr. @PaulAirs' "[Know Your Anthelmintics](https://github.com/PaulAirs/SCOPS_Know_Your_Anthelmintics)" web app; and it is being developed in conjucntion with Dr. Paul Airs and Queen's University Belfast.
+This project is a successor of [Dr. Paul Airs](https://github.com/PaulAirs)' "[Know Your Anthelmintics](https://github.com/PaulAirs/SCOPS_Know_Your_Anthelmintics)" web app; and it is being developed in conjucntion with Dr. Paul Airs and Queen's University Belfast.
