@@ -44,7 +44,7 @@ class DrugUse(models.Model):
 
 class SheepDrugType(models.Model):
 
-    group = models.CharField(max_length=50)
+    group = models.CharField(max_length=50, null=True)
     label = models.CharField(max_length=10, blank=True)
     colour = models.CharField(max_length=20, blank=True)
 
@@ -54,7 +54,7 @@ class SheepDrugType(models.Model):
 
 class SheepDrug(models.Model):
 
-    type = models.ForeignKey(SheepDrugType, on_delete=models.CASCADE, blank=True, default="")
+    type = models.ForeignKey(SheepDrugType, on_delete=models.CASCADE, blank=True, null=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     mode_of_use = models.ForeignKey(DrugUse, on_delete=models.CASCADE)
     trace_elements = models.CharField(max_length=50, blank=True)

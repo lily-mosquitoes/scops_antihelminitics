@@ -40,7 +40,11 @@
           <tbody>
           {% for product in drug_list %}
             <tr>
-              <td class="text-center">{{ product.type }}</td>
+              {% if product.type == None %}
+                <td class="text-center">{{ '' }}</td>
+              {% else %}
+                <td class="text-center">{{ product.type }}</td>
+              {% endif %}
               <td class="text-center"><p>{{ product.product }}</p>
                 <p class="text-muted">{{ product.product.company }}</p>
                 {% for component in product.product.active_component.all %}
