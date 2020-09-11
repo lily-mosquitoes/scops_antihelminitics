@@ -4,7 +4,7 @@ This web application is designed to provide up-to-date information on antihelmin
 
 ## Implementation
 
-This project is made utilizing the Django framework, as well as Bootstrap for CSS/JS styling and MySQL as the back-end database.
+This project is made utilizing the Django framework, as well as Bootstrap for CSS/JS styling and PostgreSQL as the back-end database.
 
 ## Availability
 
