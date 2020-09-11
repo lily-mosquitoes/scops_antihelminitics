@@ -21,7 +21,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # Debug
 DEBUG = os.environ['DEBUG']
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['scops-antihelmintics.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
