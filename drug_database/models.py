@@ -54,7 +54,7 @@ class SheepDrugType(models.Model):
 
 class SheepDrug(models.Model):
 
-    type = models.ForeignKey(SheepDrugType, on_delete=models.CASCADE, blank=True, default="", blank=True, null=True)
+    type = models.ForeignKey(SheepDrugType, on_delete=models.CASCADE, blank=True, default="", null=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     mode_of_use = models.ForeignKey(DrugUse, on_delete=models.CASCADE)
     trace_elements = models.CharField(max_length=50, blank=True)
