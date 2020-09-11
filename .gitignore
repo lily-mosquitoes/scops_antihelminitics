@@ -1,0 +1,6 @@
+# interpreter files
+*.pyc
+
+# not in use django files
+*.sqlite3
+*/asgi.py
