@@ -15,11 +15,11 @@
       <div class="m-4">
 
         <h1 class="d-none d-lg-block">SCOPS Antihelmintics Information Site</h1>
-        <h5 class="d-lg-none">SCOPS Antihelmintics Information Site</h5>
-        <p class="d-none d-lg-block">The objective of this site is to deliver up-to-date information on antihelmintic drugs available for a range of parasites that afflict sheep.</p><br>
+        <p class="d-lg-none"><strong>SCOPS Antihelmintics Information Site</strong></p>
+        <p class="d-none d-lg-block">The objective of this site is to deliver up-to-date information on antihelmintic drugs available for a range of parasites that afflict sheep.</p><br class="d-none d-lg-block">
 
-        <h4 class="d-none d-lg-block">Please select one or more parasites:</h4><br>
-        <p class="d-lg-none">Please select one or more parasites:</p><br>
+        <p class="d-none d-lg-block" style="font-size:24px;">Please select one or more parasites:</p>
+        <p class="d-lg-none">Please select one or more parasites:</p>
 
         <form action="{% url 'drug_database:list' %}", method="post">
         {% csrf_token %}
