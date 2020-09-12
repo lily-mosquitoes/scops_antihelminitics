@@ -16,10 +16,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # warning: HSTS not set
 
 # Secret key
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # Debug
-DEBUG = os.environ['DEBUG']
+DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = ['scops-antihelmintics.herokuapp.com', '127.0.0.1']
 
@@ -109,9 +109,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # CSRF protection
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
-
-# Database connection performance (change to None once ready)
-CONN_MAX_AGE = 0
 
 # SSL enforcement
 # SECURE_SSL_REDIRECT = True
