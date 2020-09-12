@@ -44,12 +44,16 @@ class DrugUse(models.Model):
 
 class SheepDrugType(models.Model):
 
+    # group needs to be able to be NULL so group can be optional on SheepDrug
     group = models.CharField(max_length=50, null=True)
     label = models.CharField(max_length=10, blank=True)
     colour = models.CharField(max_length=20, blank=True)
 
     def __str__(self):
-        return f"{self.group} - {self.label} ({self.colour})"
+        if label == '' or colour == '':
+            return self.group
+        else:
+            return f"{self.group} - {self.label} ({self.colour})"
 
 
 class SheepDrug(models.Model):
