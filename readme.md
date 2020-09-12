@@ -16,6 +16,7 @@ This project is a successor of [Dr. Paul Airs](https://github.com/PaulAirs)' "[K
 
 ## To do
 
-- Adjust HTML for mobile
 - Fix sticky headers for table
 - Add option to filter out products
+- Improve style (especially for mobile)
+- Make welcome screen?
