@@ -1,5 +1,7 @@
 # SCOPS Antihelmintics Information Site
 
+![tests](https://github.com/lily-mosquitoes/scops_antihelmintics/workflows/tests/badge.svg)
+
 This web application is designed to provide up-to-date information on antihelmintic drugs available for a range of parasites that afflict sheep. The objective is to deliver concise information that attends the needs of veterinary professionals, consolidated in a convenient database.
 
 ## Implementation
@@ -16,7 +18,8 @@ This project is a successor of [Dr. Paul Airs](https://github.com/PaulAirs)' "[K
 
 ## To do
 
-- Fix sticky headers for table
+- Make tests for views?
+- Find out why sticky headers fail for chrome but work in firefox
 - Add option to filter out products
 - Improve style (especially for mobile)
 - Make welcome screen?
