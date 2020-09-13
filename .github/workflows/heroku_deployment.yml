@@ -14,10 +14,6 @@ jobs:
         uses: actions/checkout@v2 # default checkout action for workflows
         with:
           fetch-depth: 0
-      # - name: heroku_login
-      #   env:
-      #     HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
-      #   run: heroku auth:login
       - name: git_push
         env:
           HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
