@@ -12,15 +12,21 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2 # default checkout action for workflows
+        with:
+          fetch-depth: 0
       - name: heroku_login
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_TOKEN }}
         run: heroku container:login
-      - name: heroku_push
+      - name: git_push
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_TOKEN }}
-        run: heroku container:push --app scops-antihelmintics web
-      - name: heroku_release
-        env:
-          HEROKU_API_KEY: ${{ secrets.HEROKU_API_TOKEN }}
-        run: heroku container:release --app scops-antihelmintics web
+          run: git push https://heroku:$HEROKU_API_TOKEN@git.heroku.com/scops-antihelmintics.git origin/master:master
+      # - name: heroku_push
+      #   env:
+      #     HEROKU_API_KEY: ${{ secrets.HEROKU_API_TOKEN }}
+      #   run: heroku container:push --app scops-antihelmintics web
+      # - name: heroku_release
+      #   env:
+      #     HEROKU_API_KEY: ${{ secrets.HEROKU_API_TOKEN }}
+      #   run: heroku container:release --app scops-antihelmintics web
