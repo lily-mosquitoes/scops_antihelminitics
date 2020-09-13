@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2 # default checkout action for workflows
-      - name: push_to_heroku_main:
+      - name: push_to_heroku_main
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_TOKEN }}
         run: |
