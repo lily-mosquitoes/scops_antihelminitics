@@ -17,7 +17,7 @@ jobs:
       - name: heroku_login
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_TOKEN }}
-        run: heroku container:login
+        run: heroku auth:login
       - name: git_push
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_TOKEN }}
