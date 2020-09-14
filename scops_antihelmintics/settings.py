@@ -110,8 +110,8 @@ AUTH_PASSWORD_VALIDATORS = [
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 
-# SSL enforcement
-# SECURE_SSL_REDIRECT = True
+# SSL enforcement / set on production server
+SECURE_SSL_REDIRECT = os.environ.get('SECURE_SSL_REDIRECT')
 
 
 # Internationalization
@@ -131,10 +131,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-STATICFILES_DIRS = [
-    ('static', os.path.join(BASE_DIR, 'static'))
-]
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
