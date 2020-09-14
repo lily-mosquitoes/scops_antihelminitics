@@ -11,7 +11,7 @@ This project is made utilizing the Django framework, as well as Bootstrap for CS
 
 ## Availability
 
-This project is still in development, the test web application is currently deployed under heroku. You can access it via [scops-antihelmintics.herokuapp.com](https://scops-antihelmintics.herokuapp.com/)
+This project is still in development, the test web application is currently deployed with Heroku. You can access it via [scops-antihelmintics.herokuapp.com](https://scops-antihelmintics.herokuapp.com/)
 
 ## Acknowledgments
 
