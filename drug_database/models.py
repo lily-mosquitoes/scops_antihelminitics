@@ -50,7 +50,7 @@ class SheepDrugType(models.Model):
     colour = models.CharField(max_length=20, blank=True)
 
     def __str__(self):
-        if label == '' or colour == '':
+        if self.label == '' or self.colour == '':
             return self.group
         else:
             return f"{self.group} - {self.label} ({self.colour})"
