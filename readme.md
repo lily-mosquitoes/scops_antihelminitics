@@ -2,6 +2,7 @@
 
 ![tests](https://github.com/lily-mosquitoes/scops_antihelmintics/workflows/tests/badge.svg)
 ![heroku deployment](https://github.com/lily-mosquitoes/scops_antihelmintics/workflows/heroku%20deployment/badge.svg)
+![website](https://img.shields.io/website?logo=Heroku&url=https%3A%2F%2Fscops-antihelmintics.herokuapp.com%2F)
 
 This web application is designed to provide up-to-date information on antihelmintic drugs available for a range of parasites that afflict sheep. The objective is to deliver concise information that attends the needs of veterinary professionals, consolidated in a convenient database.
 
